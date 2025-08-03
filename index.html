@@ -53,8 +53,9 @@
         .then(() => {
         alert("Message sent successfully!");
         form.reset(); 
-        const home = document.getElementById("home");
-        if( home)home.scrollIntoView({behavior: "smooth"});
+        // scrolling behavior causing CORS porblem with .cloud parent website
+        // const home = document.getElementById("home");
+        // if( home)home.scrollIntoView({behavior: "smooth"});
 
       }).catch((error) => {
         console.error("Error: ", error);
